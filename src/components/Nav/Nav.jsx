@@ -21,6 +21,8 @@ const Nav = () => {
 						$color={planet.ciclecolor}
 						name={planet.name}
 						$transparentWhite={COLORS.transparentWhite}
+						setManu={setMenu}
+						toggleMenu={toggleMenu}
 					/>
 				))}
 			</StyledButtonsNav>

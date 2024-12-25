@@ -16,7 +16,7 @@ const StyledBoxNav = styled.div`
         width: 665px;
     }
     @media screen and (width>= 1440px) {
-       padding: 0;
+        padding: 0;
     }
 `;
 const StyledHamburguer = styled.img`

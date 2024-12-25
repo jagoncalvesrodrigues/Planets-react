@@ -1,12 +1,19 @@
 import { Route, Routes } from 'react-router-dom';
 import Home from '../pages/home/Home';
 import Planet from '../pages/planet/Planet';
+import { PLANETS_INFO } from '../constants/planets';
 
 const Router = () => {
 	return (
 		<Routes>
 			<Route path='/' element={<Home />} />
-			<Route path='/planet' element={<Planet />} />
+			{PLANETS_INFO.map(planet => (
+				<Route
+					key={planet.id}
+					path={`/${planet.name}`}
+					element={<Planet planet={planet} />}
+				/>
+			))}
 		</Routes>
 	);
 };
