@@ -1,6 +1,6 @@
 import { StyledBoxButtonsMobile, StyledButton } from './buttonsMobile.styles';
 
-const ButtonsMobile = ({ setButtonSelected }) => {
+const ButtonsMobile = ({ setButtonSelected, setDisplay }) => {
 	return (
 		<StyledBoxButtonsMobile>
 			<StyledButton
